@@ -48,6 +48,11 @@
                             </a>
 
                             <ul class="dropdown-menu">
+                                @if (auth()->user()->admin)
+                                <li>
+                                  <a href="{{ url('/admin/products') }}">Gestionar productos</a>
+                                </li>
+                                @endif
                                 <li>
                                     <a href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
@@ -107,6 +112,3 @@
     <script src="{{ asset ('/js/material-kit.js') }}" type="text/javascript"></script>
 
 </html>
-
-
-
