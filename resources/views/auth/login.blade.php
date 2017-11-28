@@ -22,8 +22,16 @@
                                     <i class="material-icons">email</i>
                                 </span>
                                 
-                                <input id="email" type="email" class="form-control" placeholder="Email..." name="email" value="{{ old('email') }}" required autofocus>
-
+                                <input id="email" type="email" class="form-control" placeholder="Email" name="email" value="{{ old('email') }}" required autofocus>
+                                @if ($errors->any())
+                                    <div class="alert">
+                                        <ul>
+                                            @foreach ($errors->all() as $error)
+                                                <li style="color: red">{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                @endif
                             </div>
 
                             <div class="input-group">
@@ -31,7 +39,7 @@
                                     <i class="material-icons">lock_outline</i>
                                 </span>
 
-                                <input type="password" placeholder="Password..." id="password" type="password" class="form-control" name="password" required>
+                                <input type="password" placeholder="Password" id="password" type="password" class="form-control" name="password" required>
                             </div>  
 
                             <!-- If you want to add a checkbox to this form, uncomment this code
