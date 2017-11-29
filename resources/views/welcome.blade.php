@@ -7,7 +7,7 @@
 
 
     <div class="wrapper">
-        <div class="header header-filter" style="background-image: url('https://images.unsplash.com/photo-1423655156442-ccc11daa4e99?crop=entropy&dpr=2&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450');">
+        <div class="header header-filter" style="background-image: url('{{ asset('img/bg-fondo.jpg') }}');">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -32,37 +32,6 @@
                         </div>
                     </div>
 
-                    <div class="features">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="info">
-                                    <div class="icon icon-primary">
-                                        <i class="material-icons">chat</i>
-                                    </div>
-                                    <h4 class="info-title">First Feature</h4>
-                                    <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="info">
-                                    <div class="icon icon-success">
-                                        <i class="material-icons">verified_user</i>
-                                    </div>
-                                    <h4 class="info-title">Second Feature</h4>
-                                    <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="info">
-                                    <div class="icon icon-danger">
-                                        <i class="material-icons">fingerprint</i>
-                                    </div>
-                                    <h4 class="info-title">Third Feature</h4>
-                                    <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="section text-center">
@@ -86,53 +55,10 @@
                                 </div>
 
                             @endforeach
-
                         </div>
                     </div>
-
-                </div>
-
-
-                <div class="section landing-section">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <h2 class="text-center title">Work with us</h2>
-                            <h4 class="text-center description">Divide details about your product or agency work into parts. Write a few lines about each one and contact us about any further collaboration. We will responde get back to you in a couple of hours.</h4>
-                            <form class="contact-form">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group label-floating">
-                                            <label class="control-label">Your Name</label>
-                                            <input type="email" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group label-floating">
-                                            <label class="control-label">Your Email</label>
-                                            <input type="email" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="form-group label-floating">
-                                    <label class="control-label">Your Messge</label>
-                                    <textarea class="form-control" rows="4"></textarea>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-4 col-md-offset-4 text-center">
-                                        <button class="btn btn-primary btn-raised">
-                                            Send Message
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-
         </div>
 
 @include('includes.footer')

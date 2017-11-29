@@ -25,7 +25,7 @@
             </ul>
         </nav>
         <div class="copyright pull-right">
-            &copy; 2016, made with <i class="fa fa-heart heart"></i> by Creative Tim
+            &copy; Copyright 2017 Pulmahue
         </div>
     </div>
 </footer>
