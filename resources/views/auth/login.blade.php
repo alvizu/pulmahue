@@ -13,8 +13,10 @@
                     <form class="form" method="POST" action="{{ route('login') }}">
 
                         {{ csrf_field() }}
-
-                        <p class="text-divider">Ingresa tus datos</p>
+                        <div class="header header-primary text-center">
+                            <h4>Ingreso</h4>
+                        </div>
+                        <p class="text-divider">Completa tus datos</p>
                         <div class="content">
 
                             <div class="input-group">
