@@ -7,7 +7,7 @@
 
 
     <div class="wrapper">
-        <div class="header header-filter" style="background-image: url('img/bg-fondo.jpg');">
+        <div class="header" style="background: url('img/bg-fondo.jpg');">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -57,9 +57,8 @@
                 </div>
             </div>
         </div>
-
-@include('includes.footer')
     </div>
-
+    
+    @include('includes.footer')
 
 @endsection
