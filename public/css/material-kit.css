@@ -1978,7 +1978,7 @@ legend {
   height: 50px;
   line-height: 30px;
   color: inherit;
-  padding: 10px 15px;
+  padding: 0px 15px;
 }
 .navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
   color: inherit;
@@ -2361,7 +2361,7 @@ legend {
   }
   .navbar .navbar-brand {
     height: 50px;
-    padding: 10px 15px;
+
   }
   .navbar .navbar-nav > li > a {
     padding-top: 15px;
@@ -3666,7 +3666,7 @@ h2.title {
   height: 100vh;
 }
 .landing-page .header .container {
-  padding-top: 26vh;
+  padding-top: 10vh;
   color: #FFFFFF;
 }
 .landing-page .header .share {
@@ -3709,9 +3709,9 @@ h2.title {
   margin-bottom: 30px;
 }
 
-.signup-page .wrapper > .header {
+/* .signup-page .wrapper > .header {
   min-height: 100vh;
-}
+} */
 .signup-page .wrapper .card-signup {
   margin: 160px 0 40px;
 }

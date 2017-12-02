@@ -12,9 +12,9 @@
                 <div class="row">
                     <div class="col-md-6">
                         <h1 class="title">Más que una cerveza</h1>
-                        <br />
+                        <br/>
                     </div>
-                </div>
+                </div>    
             </div>
         </div>
 
@@ -44,9 +44,6 @@
                                             <small class="text-muted">Model</small>
                                         </h4>
                                         <p class="description">{{ $product->description }} </p>
-                                        <a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-twitter"></i></a>
-                                        <a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-instagram"></i></a>
-                                        <a href="#pablo" class="btn btn-simple btn-just-icon btn-default"><i class="fa fa-facebook-square"></i></a>
                                     </div>
                                 </div>
 

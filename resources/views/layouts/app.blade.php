@@ -32,7 +32,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ url('/') }}">Pulmahue Brew</a>
+                <a class="navbar-brand" href="{{ url('/') }}"><img src="img/logo.png" alt="logo-pulmahue" width="60px"></a>
             </div>
 
             <div class="collapse navbar-collapse" id="navigation-example">
@@ -84,6 +84,7 @@
     <script src="{{ asset ('/js/jquery.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset ('/js/bootstrap.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset ('/js/material.min.js') }}"></script>
+    <script src="{{ asset ('/js/script.js') }}" type="text/javascript"></script>
 
     <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
     <script src="{{ asset ('/js/nouislider.min.js') }}" type="text/javascript"></script>
