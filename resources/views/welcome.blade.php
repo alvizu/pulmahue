@@ -14,7 +14,17 @@
                         <h1 class="title">Más que una cerveza</h1>
                         <br/>
                     </div>
-                </div>    
+                </div>
+                <div class="row">
+                    <div class="col-md-12" >
+                      <div class="jumbotron jumbotron-fluid" style="background: url('img/banner3.jpg'); height: 460px;">
+                        <div class="container">
+                          <h1 class="display-3">Pulmahue</h1>
+                          <p class="lead">La cerveza de tradicion que sabe a nosotros, llevando siempre el sabor y la esencia que nos identifica.</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -54,7 +64,7 @@
             </div>
         </div>
     </div>
-    
+
     @include('includes.footer')
 
 @endsection
