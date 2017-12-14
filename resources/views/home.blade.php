@@ -8,7 +8,7 @@
 
 
     <div class="wrapper">
-        <div class="header header-filter" style="background: url('img/bg-fondo.jpg');">
+        <div id="header" class="header header-filter" style="background: url('img/bg-fondo.jpg');">
         </div>
 
         <div class="main main-raised">

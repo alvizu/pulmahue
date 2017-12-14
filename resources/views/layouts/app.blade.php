@@ -36,8 +36,8 @@
             </div>
 
             <div class="collapse navbar-collapse" id="navigation-example">
-            <button class="btn btn-primary btn-sm" id="button-color" type="button">light blue</button>
             <button class="btn btn-primary btn-sm" id="default-bkgrd" type="button">default</button>
+            <button class="btn btn-primary btn-sm" id="button-color" type="button">light blue</button>
             <button class="btn btn-primary btn-sm" id="christmas-bkgrd" type="button">christmas</button>
                 <ul class="nav navbar-nav navbar-right">
 
@@ -75,11 +75,11 @@
             </div>
         </div>
     </nav>
-
+    
     <div class="wrapper">
         @yield('content')
     </div>
-
+    
 </body>
 
 
