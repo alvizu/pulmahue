@@ -17,7 +17,6 @@ christmasBkgrd.addEventListener('click', function () {
 });
 
 var formRegister = document.getElementById("formRegister")
-var elementos = formRegister.elements;
 var name = document.getElementById('name')
 var pwd = document.getElementById('password')
 var pwdC = document.getElementById('password-c')
