@@ -2051,7 +2051,13 @@ legend {
   background-color: transparent;
   color: inherit;
 }
+.btn-theme{
+  display: none;
+}
 @media (min-width: 768px) {
+  .btn-theme  {
+    display: block;
+  }
   .navbar .navbar-nav .navbar-text {
     color: inherit;
     margin-top: 15px;

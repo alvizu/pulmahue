@@ -36,9 +36,11 @@
             </div>
 
             <div class="collapse navbar-collapse" id="navigation-example">
-            <button class="btn btn-secondary btn-sm" id="default-bkgrd" type="button">default</button>
-            <button class="btn btn-secondary btn-sm" id="button-color" type="button">light blue</button>
-            <button class="btn btn-secondary btn-sm" id="christmas-bkgrd" type="button">christmas</button>
+            <div class="btn-theme">
+                <button class="btn btn-secondary btn-sm" id="default-bkgrd" type="button">default</button>
+                <button class="btn btn-secondary btn-sm" id="button-color" type="button">light blue</button>
+                <button class="btn btn-secondary btn-sm" id="christmas-bkgrd" type="button">christmas</button>
+            </div>
                 <ul class="nav navbar-nav navbar-right">
 
                     @guest
