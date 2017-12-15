@@ -40,7 +40,7 @@
                                     <i class="material-icons">lock_outline</i>
                                 </span>
 
-                                <input type="password" placeholder="Contraseña" id="password" type="password" class="form-control" name="password" required>
+                                <input type="password" placeholder="Contraseña" id="password" class="form-control" name="password" required autofocus>
                             </div>  
 
                             <div class="input-group">
@@ -48,7 +48,7 @@
                                     <i class="material-icons">lock_outline</i>
                                 </span>
 
-                                <input type="password" placeholder="Confirmar contraseña" type="password" class="form-control" name="password_confirmation" required>
+                                <input type="password" placeholder="Confirmar contraseña" class="form-control" name="password_confirmation" required autofocus>
                             </div>  
 
                        
