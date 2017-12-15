@@ -9,11 +9,11 @@ buttonGreen.addEventListener('click', function () {
 });
 
 defaultBkgrd.addEventListener('click', function () {
-    header.style.background = "url('img/bg-fondo.jpg')"
+    header.style.backgroundColor = '#DF8383'
 });
 
 christmasBkgrd.addEventListener('click', function () {
-    header.style.background = "url('img/background_christmas.jpg')"
+    header.style.backgroundColor = '#679191'
 });
 
 var formRegister = document.getElementById("formRegister")
