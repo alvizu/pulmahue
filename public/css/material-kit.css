@@ -2071,9 +2071,9 @@ legend {
     border-bottom: 1px solid;
     opacity: 0.08;
   }
-  .navbar .navbar-nav .open .dropdown-menu > li > a {
+  /* .navbar .navbar-nav .open .dropdown-menu > li > a {
     color: inherit;
-  }
+  } */
   .navbar .navbar-nav .open .dropdown-menu > li > a:hover, .navbar .navbar-nav .open .dropdown-menu > li > a:focus {
     color: inherit;
     background-color: transparent;
