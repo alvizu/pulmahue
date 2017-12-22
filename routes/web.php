@@ -16,8 +16,9 @@ Route::get('/', 'TestController@welcome');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('products/{id}', 'ProductController@show');
 
-Route::middleware(['auth', 'admin'])->group(function () {
+Route::middleware(['auth', 'admin'])->namespace('Admin')->group(function () {
       Route::get('/admin/products', 'ProductController@index'); // listado
       Route::get('/admin/products/create', 'ProductController@create'); // form de creacion
       Route::post('/admin/products', 'ProductController@store'); // registrar

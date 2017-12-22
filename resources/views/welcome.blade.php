@@ -3,6 +3,14 @@
 
 @section('body-class', 'landing-page')
 
+@section('styles')
+  <style media="screen">
+    .team .row .col-md-4 {
+      margin-bottom: 5em;
+    }
+  </style>
+@endsection
+
 @section('content')
 
 
@@ -50,7 +58,9 @@
                                 <div class="col-md-4 col-sm-6">
                                     <div class="team-player">
                                         <img src="{{ $product->featured_image_url }}" alt="Thumbnail Image" class="img-raised img-circle">
-                                        <h4 class="title">{{ $product->name }} <br />
+                                        <h4 class="title">
+                                          <a href="{{ url('/products/'.$product->id) }}"></a>{{ $product->name }}
+                                          <br>
                                             <small class="text-muted">Model</small>
                                         </h4>
                                         <p class="description">{{ $product->description }} </p>
