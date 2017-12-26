@@ -5,9 +5,20 @@
 
 @section('styles')
   <style media="screen">
-    .team .row .col-md-4 {
+    .team .row .col-md-4, .team .row .col-sm-6 {
       margin-bottom: 5em;
     }
+    .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+  }
+  .row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+  }
   </style>
 @endsection
 
@@ -68,6 +79,9 @@
                                 </div>
 
                             @endforeach
+                        </div>
+                        <div class="text-center">
+                          {{ $products->links() }}
                         </div>
                     </div>
                 </div>
