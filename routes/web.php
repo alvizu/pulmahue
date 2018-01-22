@@ -18,6 +18,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('products/{id}', 'ProductController@show');
 
+Route::post('/cart', 'CartDetailController@store');
+
+
 Route::middleware(['auth', 'admin'])->namespace('Admin')->group(function () {
       Route::get('/admin/products', 'ProductController@index'); // listado
       Route::get('/admin/products/create', 'ProductController@create'); // form de creacion

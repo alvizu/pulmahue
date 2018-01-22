@@ -69,7 +69,9 @@
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h4 class="modal-title" id="myModalLabel">Indique la cantidad</h4>
       </div>
-      <form class="" action="index.html" method="post">
+      <form class="" action="{{ url('/cart') }}" method="post">
+        {{ csrf_field() }}
+        <input type="hidden" name="product_id" value="{{ $product->id }}">
         <div class="modal-body">
           <input type="number" name="quantity" value="1" class="form-control">
         </div>
