@@ -29,28 +29,33 @@
                     <form class="" action="{{ url('/admin/products/'.$product->id.'/edit') }}" method="post">
                       {{ csrf_field() }}
 
-                      <div class="col-sm-4">
+                      <div class="col-sm-6">
                         	<div class="form-group label-floating">
                         		<label class="control-label">Nombre del producto</label>
                         		<input type="text" class="form-control" name="name" value="{{ old('name', $product->name) }}">
                         	</div>
                       </div>
-                      <div class="col-sm-4">
+                      <div class="col-sm-6">
                           <div class="form-group label-floating">
                             <label class="control-label">Descripcion corta</label>
                             <input type="text" class="form-control" name="description" value="{{ old('description', $product->description) }}">
                           </div>
                       </div>
-                      <div class="col-sm-4">
+                      <div class="col-sm-12">
                           <div class="form-group label-floating">
                             <label class="control-label">Descripcion larga</label>
-                            <input type="text" class="form-control" name="long_description">
+                            <textarea class="form-control" rows="2" name="long_description">{{ old('long_description', $product->long_description) }}</textarea>
                           </div>
                       </div>
                       <div class="col-sm-4">
                           <div class="form-group label-floating">
                             <label class="control-label">Categoria</label>
-                            <input type="number" class="form-control" name="category_id" value="{{ old('category_id', $product->category_id) }}">
+                            <select type="number" class="form-control" name="category_id">
+                                <!-- <option value="0">General</option> -->
+                                @foreach ($categories as $category)
+                                <option value="{{ $category->id }}" @if($category->id == old('category_id', $product->category_id)) selected @endif>{{ $category->name }}</option>
+                                @endforeach
+                            </select>
                           </div>
                       </div>
                       <div class="col-sm-4">

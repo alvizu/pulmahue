@@ -19,7 +19,7 @@
 
                         <div class="name">
                             <h3 class="title">{{ $product->name }}n</h3>
-                            <h6>CATEGORY</h6>
+                            <h6>{{ $product->category->name }}</h6>
                         </div>
 
                         @if (session('notification'))

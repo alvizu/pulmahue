@@ -16,43 +16,36 @@
             <div class="container">
 
                 <div class="section text-center">
-                    <h2 class="title">Listado de Productos</h2>
+                    <h2 class="title">Listado de Categorías</h2>
 
                     <div class="team">
                         <div class="row">
-                            <a href="{{ url('/admin/products/create')}}"class="btn btn-primary btn-round">Nuevo producto</a>
+                            <a href="{{ url('/admin/categories/create')}}"class="btn btn-primary btn-round">Nueva categoría</a>
                             <table class="table">
                                 <thead>
                                     <tr>
                                         <th class="text-center">#</th>
                                         <th class="col-md-2 text-center">Nombre</th>
                                         <th class="col-md-4 text-center">Descripcion</th>
-                                        <th class="text-center">Categoria</th>
-                                        <th class="text-right">Precio</th>
                                         <th class="text-right">Opciones</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($products as $product)
+                                    @foreach($categories as $category)
                                         <tr>
-                                            <td class="text-center">{{ $product->id }}</td>
-                                            <td>{{ $product->name }}</td>
-                                            <td>{{ $product->description }}</td>
-                                            <td>{{ $product->category->name }}</td>
-                                            <td class="text-right">&dollar; {{ $product->price }}</td>
+                                            <td class="text-center">{{ $category->id }}</td>
+                                            <td>{{ $category->name }}</td>
+                                            <td>{{ $category->description }}</td>
                                             <td class="td-actions text-right">
 
-                                                <form class="" action="{{ url('/admin/products/'.$product->id)}}" method="post">
+                                                <form class="" action="{{ url('/admin/categories/'.$category->id)}}" method="post">
                                                   {{ csrf_field()}}
                                                   {{ method_field('DELETE') }}
-                                                  <a href="{{ url('/products/'.$product->id) }}"type="button" rel="tooltip" title="Ver" class="btn btn-info btn-simple btn-xs" target="_blank">
+                                                  <a type="button" rel="tooltip" title="Ver" class="btn btn-info btn-simple btn-xs">
                                                       <i class="fa fa-info"></i>
                                                   </a>
-                                                  <a href="{{ url('/admin/products/'.$product->id.'/edit') }}" rel="tooltip" title="Editar" class="btn btn-success btn-simple btn-xs">
+                                                  <a href="{{ url('/admin/categories/'.$category->id.'/edit') }}" rel="tooltip" title="Editar" class="btn btn-success btn-simple btn-xs">
                                                       <i class="fa fa-edit"></i>
-                                                  </a>
-                                                  <a href="{{ url('/admin/products/'.$product->id.'/images') }}" type="button" rel="tooltip" title="Imagenes" class="btn btn-warning btn-simple btn-xs">
-                                                      <i class="fa fa-image"></i>
                                                   </a>
                                                   <button type="submit" rel="tooltip" title="Eliminar" class="btn btn-danger btn-simple btn-xs">
                                                       <i class="fa fa-times"></i>
@@ -65,7 +58,7 @@
                                 </tbody>
                             </table>
 
-                            {{ $products->links() }}
+                            {{ $categories->links() }}
 
                         </div>
                     </div>
