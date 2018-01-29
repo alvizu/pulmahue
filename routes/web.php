@@ -16,7 +16,11 @@ Route::get('/', 'TestController@welcome');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('products/{id}', 'ProductController@show');
+Route::get('/products/{id}', 'ProductController@show');
+Route::get('/categories/{category}', 'CategoryController@show');
+
+Route::get('/search', 'SearchController@show');
+
 
 Route::post('/cart', 'CartDetailController@store');
 Route::delete('/cart', 'CartDetailController@destroy');
