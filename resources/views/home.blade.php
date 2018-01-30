@@ -85,6 +85,8 @@
                         </tbody>
                     </table>
 
+                    <p><strong>Total a pagar: </strong>{{ auth()->user()->cart->total }}</p>
+
                     <div class="text-center">
                       <form class="" action="{{ url('/order') }}" method="post">
                         {{ csrf_field() }}
@@ -92,7 +94,7 @@
                         	<i class="material-icons">done</i> Realizar pedido
                         </button>
                       </form>
-                      
+
                     </div>
 
 

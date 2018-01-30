@@ -19,7 +19,7 @@ class Product extends Model
   public function getFeaturedImageUrlAttribute()
   {
     $featuredImage = $this->images()->where('featured', true)->first();
-    if (!$featuredImage) 
+    if (!$featuredImage)
       $featuredImage = $this->images()->first();
 
 
@@ -27,6 +27,6 @@ class Product extends Model
       return $featuredImage->url;
     }
 
-    return '/images/products/default.gif';
+    return '/images/default.gif';
   }
 }

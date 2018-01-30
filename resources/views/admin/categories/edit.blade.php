@@ -26,16 +26,25 @@
                       </div>
                     @endif
 
-                    <form class="" action="{{ url('/admin/categories/'.$category->id.'/edit') }}" method="post">
+                    <form class="" action="{{ url('/admin/categories/'.$category->id.'/edit') }}" method="post" enctype="multipart/form-data">
                       {{ csrf_field() }}
 
-                      <div class="col-sm-4">
+                      <div class="col-sm-8">
                         	<div class="form-group label-floating">
                         		<label class="control-label">Nombre de la categoría</label>
                         		<input type="text" class="form-control" name="name" value="{{ old('name', $category->name) }}">
                         	</div>
                       </div>
                       <div class="col-sm-4">
+                        <label class="control-label ">Imagen de la categoría</label>
+                        <input type="file" name="image">
+                        @if ($category->image)
+                        <p class="help-block">
+                          Subir sólo si desea cambiar la <a href="{{ asset('/images/categories/'.$category->image) }}" target="_blank">imagen actual</a>
+                        </p>
+                        @endif
+                      </div>
+                      <div class="col-sm-8">
                           <div class="form-group label-floating">
                             <label class="control-label">Descripción</label>
                             <input type="text" class="form-control" name="description" value="{{ old('description', $category->description) }}">

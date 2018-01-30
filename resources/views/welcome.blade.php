@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+@section('title', 'Bienvenido a ' . config('app.name'))
 
 @section('body-class', 'landing-page')
 
@@ -8,14 +9,14 @@
     .team .row .col-md-4, .team .row .col-sm-6 {
       margin-bottom: 5em;
     }
-    .row {
+  .team .row {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
   flex-wrap: wrap;
   }
-  .row > [class*='col-'] {
+  .team .row > [class*='col-'] {
   display: flex;
   flex-direction: column;
   }
@@ -30,7 +31,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <h1 class="title">Más que una cerveza</h1>
+                        <h1 class="title">{{ config('app.name') }}</h1>
                         <br/>
                     </div>
                 </div>
