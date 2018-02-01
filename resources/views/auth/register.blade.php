@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('body-class', 'signup-page')
- 
+
 @section('content')
 
 <div id="header" class="header" style="background: url('img/bg-fondo.jpg');">
@@ -30,8 +30,25 @@
                                 <span class="input-group-addon">
                                     <i class="material-icons">email</i>
                                 </span>
-                                
-                                <input id="email" type="email" class="form-control" placeholder="Correo Electrónico" name="email" value="{{ old('email') }}" required autofocus>
+
+                                <input id="email" type="email" class="form-control" placeholder="Correo Electrónico" name="email" value="{{ old('email') }}" required>
+
+                            </div>
+
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="material-icons">phone</i>
+                                </span>
+
+                                <input id="phone" type="phone" class="form-control" placeholder="Teléfono" name="phone" value="{{ old('phone') }}" required>
+                            </div>
+
+                            <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="material-icons">place</i>
+                                    </span>
+
+                                    <input id="address" type="text" class="form-control" placeholder="Dirección" name="address" value="{{ old('address') }}" required>
 
                             </div>
 
@@ -41,17 +58,17 @@
                                 </span>
 
                                 <input id="password" type="password" placeholder="Contraseña" class="form-control" name="password" required autofocus>
-                            </div>  
+                            </div>
 
                             <div class="input-group">
                                 <span class="input-group-addon">
                                     <i class="material-icons">lock_outline</i>
                                 </span>
-                                
-                                <input id="password-c" type="password" placeholder="Confirmar contraseña" class="form-control" name="password_confirmation" required autofocus>
-                            </div>  
 
-                       
+                                <input id="password-c" type="password" placeholder="Confirmar contraseña" class="form-control" name="password_confirmation" required>
+                            </div>
+
+
                         </div>
                         <div class="footer text-center">
                             <button type="submit" class="btn btn-simple btn-primary btn-lg">Confirmar Registro</a>
@@ -68,7 +85,7 @@
     </div>
 
     @include('includes.footer')
-    
+
 </div>
 
 

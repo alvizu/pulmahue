@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset("img/sm_logo2.png")}}">
+    <link rel="icon" type="image/png" href="{{ asset("img/sm_logo2.png")}}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <title>@yield('title', config('app.name'))</title>
@@ -18,6 +18,7 @@
     <!-- CSS Files -->
     <link href="{{ asset('css/bootstrap.min.css') }} " rel="stylesheet" />
     <link href="{{ asset('css/material-kit.css') }} " rel="stylesheet" />
+    <link href="{{ asset('css/styles.css') }} " rel="stylesheet" />
     @yield('styles')
 
 </head>
@@ -33,15 +34,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ url('/') }}"><img src='{{ asset("img/logo.png")}}' alt="{{ config('app.name') }}" width="60px"></a>
+                <a class="navbar-brand" href="{{ url('/') }}"><img src='{{ asset("img/sm_logo.png")}}' alt="{{ config('app.name') }}" width="55px"></a>
             </div>
 
             <div class="collapse navbar-collapse" id="navigation-example">
-            <div class="btn-theme">
+            <!-- <div class="btn-theme">
                 <button class="btn btn-secondary btn-sm" id="default-bkgrd" type="button">light red</button>
                 <button class="btn btn-secondary btn-sm" id="button-color" type="button">light blue</button>
                 <button class="btn btn-secondary btn-sm" id="christmas-bkgrd" type="button">light green</button>
-            </div>
+            </div> -->
                 <ul class="nav navbar-nav navbar-right">
 
                     @guest
@@ -55,7 +56,7 @@
 
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="{{ url('/home' ) }}">Dashboard</a>
+                                    <a href="{{ url('/home' ) }}">Mi cuenta</a>
                                 </li>
                                 @if (auth()->user()->admin)
                                 <li>
@@ -96,7 +97,7 @@
     <script src="{{ asset ('/js/jquery.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset ('/js/bootstrap.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset ('/js/material.min.js') }}"></script>
-    <script src="{{ asset ('/js/script.js') }}" type="text/javascript"></script>
+    <!-- <script src="{{ asset ('/js/script.js') }}" type="text/javascript"></script> -->
 
     <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
     <script src="{{ asset ('/js/nouislider.min.js') }}" type="text/javascript"></script>

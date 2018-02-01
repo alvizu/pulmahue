@@ -1,0 +1,48 @@
+/* .video-container
+{
+  top: 0%;
+  left: 0%;
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+  z-index: -100;
+}
+video.fillWidth {
+  width: 100%;
+}
+
+#video {
+overflow:hidden;
+}
+.mivideo{
+position: absolute;
+z-index: 1;
+width: 100%;
+}
+#contenidoizq { width:50%;
+position:absolute;
+z-index:2;
+border:#333 solid 1px;   }
+
+#contenidoder { width:50%;
+position:absolute;
+z-index:3;
+}
+
+.landing-page .header {
+    height: 100vh;
+    min-height: 100vh;
+}
+
+@media (max-width: 991px)
+.landing-page .header {
+    height: 60vh;
+    min-height: 70vh;
+    min-height: 100vh;
+} */
+
+.dropdown-menu li a:hover,
+.dropdown-menu li a:focus,
+.dropdown-menu li a:active {
+  background-color: #9c27b0;
+  color: #FFFFFF;

@@ -1,18 +1,18 @@
 <footer class="footer">
     <div class="container">
         <div class="copyright">
-            &copy; Copyright 2017 Pulmahue
+            &copy; Copyright 2018 {{ config('app.name') }}
         </div>
         <div class="social">
             <ul>
                 <li>
-                    <a href="http://www.facebook.com" target="_blank"><img src="img/facebook_icon.png" alt="facebook"></a>
+                    <a href="http://www.facebook.com" target="_blank"><img src="{{ asset("img/facebook_icon.png")}}" alt="facebook"></a>
                 </li>
                 <li>
-                    <a href="http://www.instagram.com" target="_blank"><img src="img/instagram_icon.png" alt="instagram"></a>
+                    <a href="http://www.instagram.com/sucmeals" target="_blank"><img src="{{ asset("img/instagram_icon.png")}}" alt="instagram"></a>
                 </li>
                 <li>
-                    <a href="http://www.twitter.com" target="_blank"><img src="img/twitter_icon.png" alt="twitter"></a>
+                    <a href="http://www.twitter.com" target="_blank"><img src="{{ asset("img/twitter_icon.png")}}" alt="twitter"></a>
                 </li>
             </ul>
         </div>

@@ -22,7 +22,7 @@
                                 <span class="input-group-addon">
                                     <i class="material-icons">email</i>
                                 </span>
-                                
+
                                 <input id="email" type="email" class="form-control" placeholder="Email" name="email" value="{{ old('email') }}" required autofocus>
                                 @if ($errors->any())
                                     <div class="alert">
@@ -40,8 +40,8 @@
                                     <i class="material-icons">lock_outline</i>
                                 </span>
 
-                                <input type="password" placeholder="Password" id="password" type="password" class="form-control" name="password" required>
-                            </div>  
+                                <input type="password" placeholder="Contraseña" id="password" type="password" class="form-control" name="password" required>
+                            </div>
 
                             <!-- If you want to add a checkbox to this form, uncomment this code
 -->
@@ -50,7 +50,7 @@
                                     <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}>
                                     Recordar sesión
                                 </label>
-                            </div> 
+                            </div>
                         </div>
                         <div class="footer text-center">
                             <button type="submit" class="btn btn-simple btn-primary btn-lg">Ingresar</a>
@@ -65,7 +65,7 @@
             </div>
         </div>
     </div>
-    
+
     @include('includes.footer')
 
 </div>

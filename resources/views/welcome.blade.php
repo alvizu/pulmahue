@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Bienvenido a ' . config('app.name'))
+@section('title', config('app.name'))
 
 @section('body-class', 'landing-page')
 
@@ -26,16 +26,55 @@
 @section('content')
 
 
-    <div class="wrapper">
-        <div id="header" class="header" style="background: url('img/bg-fondo.jpg');">
+      <!-- <section class="section section--video">
+              <div class="container">
+                  <div class="row middle-sm">
+                      <div class="col-xs-12">
+                          <h1 class="primary-header primary-header--home">CREÁ TU<br> FUTURO DIGITAL</h1>
+                      </div>
+                      <div class="col-xs-12 col-lg-8">
+                          <p class="section__subtitle section__subtitle--home">Digital House, el coding school donde se forman las nuevas generaciones de coders y profesionales digitales para que imaginen, innoven y creen lo que siempre soñaron.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="section__video-container"><video class="section__video" muted="" autoplay="" loop="" preload="auto"> <source src="https://www.digitalhouse.com/wp-content/themes/dh/assets/videos/dh-home-header-video.mp4" type="video/mp4"></video></div>
+          </section> -->
+          <div class="wrapper">
+                  <div class="header header-filter" style="background-image: url('img/bg-fondo.jpg');">
+                    <div class="container">
+                          <div class="row">
+          					<div class="col-md-6">
+          						<h1 class="title">{{ config('app.name') }}</h1>
+          	                    <h4>No empiences una dieta que terminará algún día, comienza un estilo de vida que dure para siempre!</h4>
+          	                    <br />
+          	                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-danger btn-raised btn-lg">
+          							<i class="fa fa-play"></i> Watch video
+          						</a>
+          					</div>
+                          </div>
+                      </div>
+
+                    </div>
+
+        <!-- <div class="header video-container" style="background: url('img/bg-fondo.jpg');">
+          <video autoplay loop class="fillWidth visible-lg">
+            <source src="videos/dh-home-header-video.mp4" type="video/mp4; "/>
+            Your browser does not support the video tag.
+
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-xs-12">
                         <h1 class="title">{{ config('app.name') }}</h1>
                         <br/>
                     </div>
+                    <div class="col-xs-12 col-lg-8">
+                        <p class="section__subtitle section__subtitle--home">Digital House, el coding school donde se forman las nuevas generaciones de coders y profesionales digitales para que imaginen, innoven y creen lo que siempre soñaron.</p>
+                    </div>
                 </div>
-                <div class="row">
+              </div>
+            </video>
+          </div> -->
+                <!-- <div class="row">
                     <div class="col-md-12" >
                       <div class="jumbotron jumbotron-fluid" style="background: url('img/banner3.jpg'); height: 460px;">
                         <div class="container">
@@ -44,9 +83,8 @@
                         </div>
                       </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                </div> -->
+
 
         <div class="main main-raised">
             <div class="container">
@@ -63,7 +101,7 @@
                 <div class="section text-center">
                     <h2 class="title">Visita nuestras categorías</h2>
                     <form class="form-inline" action="{{ url('/search') }}" method="get">
-                        <input class="form-control" type="text" placeholder="Buscar" name="query" value="">
+                        <input class="form-control" type="text" placeholder="Buscar producto" name="query" value="">
                         <button class="btn btn-primary btn-just-icon" type="submit">
                         	 <i class="material-icons">search</i>
                         </button>

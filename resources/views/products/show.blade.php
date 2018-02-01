@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
-@section('title', 'Dashboard')
+@section('title', 'Producto')
 
 @section('body-class', 'profile-page')
 
 @section('content')
 
 <div class="wrapper">
-    <div class="header header-filter" style="background-image: url('/img/examples/city.jpg');"></div>
+    <div class="header header-filter" style="background-image: url('/img/sopa.jpg');"></div>
     <div class="main main-raised">
         <div class="profile-content">
             <div class="container">
@@ -31,14 +31,22 @@
                     </div>
                 </div>
                 <div class="description text-center">
-                    <p>{{ $product->description }}</p>
+                    <p>{{ $product->long_description }}</p>
                 </div>
 
                   <!-- Button trigger modal -->
                 <div class="text-center">
+                  @if (auth()->check())
+
                   <button class="btn btn-primary btn-round" data-toggle="modal" data-target="#modalAddToCart">
                   	<i class="material-icons">add</i> Agregar al carrito
                   </button>
+
+                  @else
+                  <a href="{{ url('/login?redirect_to='.url()->current()) }}"class="btn btn-primary btn-round">
+                  	<i class="material-icons">add</i> Agregar al carrito
+                  </a>
+                  @endif
                 </div>
 
 
