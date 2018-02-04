@@ -19,9 +19,9 @@ class CartController extends Controller
         $cart->save(); //UPDATE
 
         $admins = User::where('admin', true)->get();
-        Mail::to($admins)->send(new NewOrder($client, $cart));
+        Mail::to($client)->bcc($admins)->send(new NewOrder($client, $cart));
 
-        $notification = 'Tu pedido ha sido registrado correctamente. Te contactaremos pronto vía email!';
+        $notification = 'Tu pedido ha sido registrado correctamente y se enviaron los detalles a tu correo';
         return back()->with(compact('notification'));
     }
 }

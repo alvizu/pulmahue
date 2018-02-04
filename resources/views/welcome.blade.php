@@ -47,9 +47,9 @@
           						<h1 class="title">{{ config('app.name') }}</h1>
           	                    <h4>No empiences una dieta que terminará algún día, comienza un estilo de vida que dure para siempre!</h4>
           	                    <br />
-          	                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-danger btn-raised btn-lg">
+          	                    <!-- <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-danger btn-raised btn-lg">
           							<i class="fa fa-play"></i> Watch video
-          						</a>
+          						</a> -->
           					</div>
                           </div>
                       </div>

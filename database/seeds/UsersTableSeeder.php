@@ -17,14 +17,18 @@ class UsersTableSeeder extends Seeder
         	  'name' => 'Admin',
             'email' => 'alvizuguerrero@hotmail.com',
             'password' => bcrypt('123123'),
+            'phone' => '+5491126438097',
+            'address' => 'Buenos Aires, Argentina',
             'admin' => true
 
         ]);
         User::create([
 
         	  'name' => 'Robert',
-            'email' => 'robert@gmail.com',
+            'email' => 'robert.alvizu@gmail.com',
             'password' => bcrypt('123123'),
+            'phone' => '+5491126438097',
+            'address' => 'Caracas, Venezuela',
             'admin' => false
 
         ]);

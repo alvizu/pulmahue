@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
-
 @section('body-class', 'signup-page')
 
 @section('content')
+
 <div id="header" class="header" style="background: url('img/bg-fondo.jpg');">
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
-                <div class="card card-signup">
+                <div class="card card-signup" style="margin-bottom: 300px;">
                     <form class="form" method="POST" action="{{ route('login') }}" name="formLogin">
 
                         {{ csrf_field() }}
@@ -52,13 +52,14 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="footer text-center">
-                            <button type="submit" class="btn btn-simple btn-primary btn-lg">Ingresar</a>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">Ingresar</button>
+                            <a class="btn btn-simple text-center" href="{{ route('password.request') }}">
+                                Restablecer contraseña
+                             </a>
                         </div>
 
-                        {{-- <a class="btn btn-link" href="{{ route('password.request') }}">
-                            Forgot Your Password?
-                         </a> --}}
+
 
                     </form>
                 </div>

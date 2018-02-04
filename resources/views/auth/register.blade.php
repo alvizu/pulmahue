@@ -70,10 +70,11 @@
 
 
                         </div>
-                        <div class="footer text-center">
-                            <button type="submit" class="btn btn-simple btn-primary btn-lg">Confirmar Registro</a>
+                        <br>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">Confirmar Registro</button>
                         </div>
-
+                        <br>
                         {{-- <a class="btn btn-link" href="{{ route('password.request') }}">
                             Forgot Your Password?
                          </a> --}}

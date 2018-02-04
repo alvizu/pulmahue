@@ -6,7 +6,7 @@
   </head>
   <body>
       <p>Se ha realizado un nuevo pedido!</p>
-      <p>Estos son los datos del cliente que realizó el pedido:</p>
+      <p>Datos del cliente:</p>
       <ul>
           <li>
               <strong>Nombre:</strong>
@@ -15,6 +15,14 @@
           <li>
               <strong>Email:</strong>
               {{ $user->email }}
+          </li>
+          <li>
+              <strong>Teléfono:</strong>
+              {{ $user->phone }}
+          </li>
+          <li>
+              <strong>Dirección:</strong>
+              {{ $user->address }}
           </li>
           <li>
               <strong>Fecha del pedido:</strong>
@@ -33,8 +41,8 @@
           <strong>Total a pagar: </strong> {{ $cart->total }}
       </p>
       <hr>
-      <p>
+      <!-- <p>
           <a href="{{ url('/admin/orders/'.$cart->id) }}">Más info del pedido</a>
-      </p>
+      </p> -->
   </body>
 </html>

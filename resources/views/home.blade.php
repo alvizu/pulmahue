@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Mi cuenta')
+@section('title', 'Carrito de compras')
 
 @section('body-class', 'product-page')
 
@@ -15,7 +15,7 @@
             <div class="container">
 
                 <div class="section">
-                    <h2 class="title text-center">Mi cuenta</h2>
+                    <h2 class="title text-center">Carrito de compras</h2>
 
                     @if (session('notification'))
                         <div class="alert alert-success">
@@ -23,7 +23,7 @@
                         </div>
                     @endif
 
-                    <ul class="nav nav-pills nav-pills-primary" role="tablist">
+                    <!-- <ul class="nav nav-pills nav-pills-primary" role="tablist">
                     	<li class="active">
                     		<a href="#dashboard" role="tab" data-toggle="tab">
                     			<i class="material-icons">shopping_cart</i>
@@ -36,7 +36,7 @@
                     			Pedidos realizados
                     		</a>
                     	</li>
-                    </ul>
+                    </ul> -->
                     <hr>
                     <p>Cantidad de productos en el carrito: {{ auth()->user()->cart->details->count() }}</p>
 

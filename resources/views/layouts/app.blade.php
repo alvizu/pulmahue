@@ -34,7 +34,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ url('/') }}"><img src='{{ asset("img/sm_logo.png")}}' alt="{{ config('app.name') }}" width="55px"></a>
+                <a class="navbar-brand" href="{{ url('/') }}"><img src='{{ asset("img/succulentmeals_logo.png")}}' alt="{{ config('app.name') }}" width="150px"></a>
             </div>
 
             <div class="collapse navbar-collapse" id="navigation-example">
@@ -56,21 +56,20 @@
 
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="{{ url('/home' ) }}">Mi cuenta</a>
+                                    <a href="{{ url('/home' ) }}"><i class="material-icons">shopping_cart</i>  Carrrito de compras</a>
                                 </li>
                                 @if (auth()->user()->admin)
                                 <li>
-                                  <a href="{{ url('/admin/categories') }}">Gestionar categorías</a>
+                                  <a href="{{ url('/admin/categories') }}"><i class="material-icons">view_module</i>  Gestionar categorías</a>
                                 </li>
                                 <li>
-                                  <a href="{{ url('/admin/products') }}">Gestionar productos</a>
+                                  <a href="{{ url('/admin/products') }}"><i class="material-icons">view_list</i>  Gestionar productos</a>
                                 </li>
                                 @endif
                                 <li>
                                     <a href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
-                                                 document.getElementById('logout-form').submit();">
-                                        Cerrar sesión
+                                                 document.getElementById('logout-form').submit();"><i class="material-icons">lock</i>  Cerrar sesión
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
