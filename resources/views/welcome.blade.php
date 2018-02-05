@@ -45,8 +45,9 @@
                           <div class="row">
           					<div class="col-md-6">
           						<h1 class="title">{{ config('app.name') }}</h1>
-          	                    <h4>No empiences una dieta que terminará algún día, comienza un estilo de vida que dure para siempre!</h4>
-          	                    <br />
+
+
+                                <h4>Te ofrecemos planes ajustados a tus objetivos, cocinando sano y balanceado para ti. Preocupate solo por ordenar tus pedidos que nosotros nos encargamos de llenar tu refri. No empiences una dieta que terminará algún día, <strong>comienza un estilo de vida que dure para siempre!</strong></h4>
           	                    <!-- <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-danger btn-raised btn-lg">
           							<i class="fa fa-play"></i> Watch video
           						</a> -->

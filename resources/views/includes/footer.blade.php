@@ -6,10 +6,10 @@
         <div class="social">
             <ul>
                 <li>
-                    <a href="http://www.facebook.com" target="_blank"><img src="{{ asset("img/facebook_icon.png")}}" alt="facebook"></a>
+                    <a href="https://www.facebook.com/sucmeals/" target="_blank"><img src="{{ asset("img/facebook_icon.png")}}" alt="facebook"></a>
                 </li>
                 <li>
-                    <a href="http://www.instagram.com/sucmeals" target="_blank"><img src="{{ asset("img/instagram_icon.png")}}" alt="instagram"></a>
+                    <a href="https://www.instagram.com/sucmeals" target="_blank"><img src="{{ asset("img/instagram_icon.png")}}" alt="instagram"></a>
                 </li>
                 <li>
                     <a href="http://www.twitter.com" target="_blank"><img src="{{ asset("img/twitter_icon.png")}}" alt="twitter"></a>
