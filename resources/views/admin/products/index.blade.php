@@ -26,8 +26,8 @@
                                     <tr>
                                         <th class="text-center">#</th>
                                         <th class="col-md-2 text-center">Nombre</th>
-                                        <th class="col-md-4 text-center">Descripcion</th>
-                                        <th class="text-center">Categoria</th>
+                                        <th class="col-md-4 text-center">Descripción</th>
+                                        <th class="text-center">Categoría</th>
                                         <th class="text-right">Precio</th>
                                         <th class="text-right">Opciones</th>
                                     </tr>
@@ -39,7 +39,7 @@
                                             <td>{{ $product->name }}</td>
                                             <td>{{ $product->description }}</td>
                                             <td>{{ $product->category->name }}</td>
-                                            <td class="text-right">&dollar; {{ $product->price }}</td>
+                                            <td class="text-right">₡ {{ $product->price }}</td>
                                             <td class="td-actions text-right">
 
                                                 <form class="" action="{{ url('/admin/products/'.$product->id)}}" method="post">

@@ -4,6 +4,8 @@
 
 @section('body-class', 'profile-page')
 
+
+
 @section('content')
 
 <div class="wrapper">
@@ -32,6 +34,9 @@
                 </div>
                 <div class="description text-center">
                     <p>{{ $product->long_description }}</p>
+                </div>
+                <div class="description text-center">
+                    <p>₡ {{ $product->price }}</p>
                 </div>
 
                   <!-- Button trigger modal -->

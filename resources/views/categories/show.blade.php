@@ -4,14 +4,26 @@
 
 @section('body-class', 'profile-page')
 
-@section('styles')
-  <style media="screen">
-    .team .row .col-md-4, .team .row .col-sm-6 {
-      margin-bottom: 5em;
-    }
 
-  </style>
+@section('styles')
+<style media="screen">
+  .team .row .col-md-3, .team .row .col-sm-6 {
+    margin-bottom: 5em;
+  }
+.team .row {
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display:         flex;
+flex-wrap: wrap;
+}
+.team .row > [class*='col-'] {
+display: flex;
+flex-direction: column;
+}
+</style>
 @endsection
+
 
 @section('content')
 
@@ -50,7 +62,7 @@
                                 <div class="team-player">
                                     <img src="{{ $product->featured_image_url }}" alt="Thumbnail Image" class="img-raised img-circle">
                                     <h4 class="title">
-                                      <a href="{{ url('/products/'.$product->id) }}">{{ $product->name }}</a>
+                                      <a href="{{ url('/products/'.$product->id) }}" target="_blank">{{ $product->name }}</a>
                                     </h4>
                                     <p class="description">{{ $product->description }} </p>
                                 </div>
