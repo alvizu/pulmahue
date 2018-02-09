@@ -4,11 +4,11 @@
 
 @section('content')
 
-<div id="header" class="header" style="background: url('img/bg-fondo.jpg');">
+<div id="header" class="header header-filter" style="background: url('img/bg-fondo.jpg');; background-size: cover; background-position: top center;">
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
-                <div class="card card-signup" style="margin-bottom: 300px;">
+                <div class="card card-signup">
                     <form class="form" method="POST" action="{{ route('login') }}" name="formLogin">
 
                         {{ csrf_field() }}
@@ -53,10 +53,13 @@
                             </div>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn btn-primary btn-lg">Ingresar</button>
-                            <a class="btn btn-simple text-center" href="{{ route('password.request') }}">
-                                Restablecer contraseña
-                             </a>
+                            <button type="submit" class="btn btn-primary btn-lg btn-simple">Ingresar</button>
+
+                        </div>
+                        <div class="text-center">
+                          <a class="btn btn-xs btn-simple text-center" href="{{ route('password.request') }}">
+                              Restablecer contraseña
+                           </a>
                         </div>
 
 

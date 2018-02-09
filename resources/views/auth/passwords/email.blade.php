@@ -3,12 +3,12 @@
 @section('body-class', 'signup-page')
 
 @section('content')
-<div id="header" class="header" style="background: url('{{ asset("img/bg-fondo.jpg")}}');">
+<div id="header" class="header header-filter" style="background: url('{{ asset("img/bg-fondo.jpg")}}');">
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="card card-signup" style="margin-bottom: 400px;">
-                <div class="header-primary text-center">Restablecer contraseña</div>
+                <div class="header header-primary text-center">Restablecer contraseña</div>
 
                 <div class="panel-body">
                     @if (session('status'))
@@ -36,7 +36,7 @@
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary btn-simple btn-lg">
                                     Enviar enlace
                                 </button>
                             </div>

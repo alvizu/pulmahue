@@ -24,7 +24,7 @@
 </head>
 
 <body class="@yield('body-class')">
-    <nav class="navbar navbar-transparent navbar-absolute">
+    <nav class="navbar navbar-transparent navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -34,7 +34,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ url('/') }}"><img src='{{ asset("img/succulentmeals_logo.png")}}' alt="{{ config('app.name') }}" width="150px"></a>
+                <a class="navbar-brand" href="{{ url('/') }}"><img src='{{ asset("img/succulentmeals_logo.png")}}' alt="{{ config('app.name') }}" width="100em"></a>
             </div>
 
             <div class="collapse navbar-collapse" id="navigation-example">

@@ -4,7 +4,7 @@
 
 @section('content')
 
-<div id="header" class="header" style="background: url('img/bg-fondo.jpg');">
+<div id="header" class="header header-filter" style="background: url('img/bg-fondo.jpg');">
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
@@ -72,7 +72,7 @@
                         </div>
                         <br>
                         <div class="text-center">
-                            <button type="submit" class="btn btn-primary btn-lg">Confirmar Registro</button>
+                            <button type="submit" class="btn btn-primary btn-lg btn-simple">Confirmar Registro</button>
                         </div>
                         <br>
                         {{-- <a class="btn btn-link" href="{{ route('password.request') }}">

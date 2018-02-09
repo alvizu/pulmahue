@@ -44,7 +44,7 @@
                     <div class="container">
                           <div class="row">
           					<div class="col-md-6">
-          						<h1 class="title">{{ config('app.name') }}</h1>
+          						<h1 class="title">Haz de tu alimentación tu mejor aliada</h1>
 
 
                                 <h4>Te ofrecemos planes ajustados a tus objetivos, cocinando sano y balanceado para ti. Preocupate solo por ordenar tus pedidos que nosotros nos encargamos de llenar tu refri. No empiences una dieta que terminará algún día, <strong>comienza un estilo de vida que dure para siempre!</strong></h4>
