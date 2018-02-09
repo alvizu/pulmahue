@@ -1,17 +1,17 @@
 /*!
-    
+
  =========================================================
  * Material Kit - v1.1.1.0
  =========================================================
- 
+
  * Product Page: http://www.creative-tim.com/product/material-kit
  * Copyright 2017 Creative Tim (http://www.creative-tim.com)
  * Licensed under MIT (https://github.com/timcreative/material-kit/blob/master/LICENSE.md)
- 
+
  =========================================================
- 
+
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
- 
+
  */
 
 /* ANIMATION */
@@ -2748,7 +2748,7 @@ footer ul li {
 
 footer ul li a {
   color: inherit;
-  padding: 15px;
+  padding: 0px 15px;
   font-weight: 500;
   font-size: 12px;
   text-transform: uppercase;
@@ -2772,6 +2772,10 @@ footer .copyright .material-icons {
   top: 3px;
 }
 
+footer a .container .copyright .pull-right {
+  margin-top: 7px;
+}
+
 legend {
   border-bottom: 0;
 }
@@ -2789,7 +2793,7 @@ legend {
   height: 50px;
   line-height: 30px;
   color: inherit;
-  padding: 10px 15px;
+  padding: 0px 15px;
 }
 
 .navbar .navbar-brand:hover,
@@ -3313,7 +3317,7 @@ fieldset[disabled] .navbar .btn-link:focus {
 
   .navbar .navbar-brand {
     height: 50px;
-    padding: 10px 15px;
+    padding: 0px 15px;
   }
 
   .navbar .navbar-nav > li > a {
@@ -3959,7 +3963,7 @@ h2.title {
 }
 
 .card .header-primary {
-  background: linear-gradient(60deg, #ab47bc, #7b1fa2);
+  background: linear-gradient(60deg, #ce93d8, #9c27b0);
 }
 
 .card .header-info {
@@ -4976,4 +4980,3 @@ h2.title {
     margin-right: 10px;
   }
 }
-

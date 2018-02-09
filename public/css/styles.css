@@ -41,8 +41,7 @@ z-index:3;
     min-height: 100vh;
 } */
 
-.dropdown-menu li a:hover,
-.dropdown-menu li a:focus,
-.dropdown-menu li a:active {
-  background-color: #9c27b0;
-  color: #FFFFFF;
+
+  .copy-right {
+    margin-top: 7px;
+  }

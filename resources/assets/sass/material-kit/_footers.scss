@@ -11,7 +11,8 @@ footer{
 
             a{
                 color: inherit;
-                padding: $padding-base;
+                // padding: $padding-base;
+                padding: 0px 15px;
                 font-weight: $font-weight-bold;
                 font-size: $mdb-btn-font-size-base;
                 text-transform: uppercase;
@@ -33,6 +34,9 @@ footer{
             font-size: 18px;
             position: relative;
             top: 3px;
+        }
+        .pull-right{
+          margin-top: 7px;
         }
     }
 }

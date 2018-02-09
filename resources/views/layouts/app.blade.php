@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 
     <!-- CSS Files -->
-    <link href="{{ asset('css/bootstrap.min.css') }} " rel="stylesheet" />
+    <link href="{{ asset('css/app.css') }} " rel="stylesheet" />
     <link href="{{ asset('css/material-kit.css') }} " rel="stylesheet" />
     <link href="{{ asset('css/styles.css') }} " rel="stylesheet" />
     @yield('styles')
@@ -34,7 +34,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ url('/') }}"><img src='{{ asset("img/succulentmeals_logo.png")}}' alt="{{ config('app.name') }}" width="100em"></a>
+                <a class="navbar-brand" href="{{ url('/') }}"><img src='{{ asset("img/succulentmeals_logo.png")}}' alt="{{ config('app.name') }}" width="188"></a>
             </div>
 
             <div class="collapse navbar-collapse" id="navigation-example">
