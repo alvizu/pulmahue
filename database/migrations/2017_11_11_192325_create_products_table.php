@@ -19,10 +19,10 @@ class CreateProductsTable extends Migration
             $table->string('description');
             $table->text('long_description');
             $table->float('price');
- 
+
             // Foreign Key
             $table->integer('category_id')->unsigned()->nullable();
-            $table->foreign('category_id')->references('id')->on('categories');
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
 
             $table->timestamps();
         });

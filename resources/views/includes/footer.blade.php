@@ -9,7 +9,7 @@
 	                        <a href="https://www.instagram.com/sucmeals" target="_blank"><img src="{{ asset("img/instagram_icon.png")}}" alt="instagram"></a>
 	                    </li>
 	                    <li>
-	                        <a href="http://www.twitter.com/sucmeals" target="_blank"><img src="{{ asset("img/twitter_icon.png")}}" alt="twitter"></a>
+	                        <a href="https://www.twitter.com/sucmeals" target="_blank"><img src="{{ asset("img/twitter_icon.png")}}" alt="twitter"></a>
 	                    </li>
 
 	                </ul>

@@ -9,14 +9,24 @@
     .team .row .col-md-4, .team .row .col-sm-6 {
       margin-bottom: 5em;
     }
-
+    .team .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    flex-wrap: wrap;
+    }
+    .team .row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+    }
   </style>
 @endsection
 
 @section('content')
 
 <div class="wrapper">
-    <div class="header header-filter" style="background-image: url('/img/examples/city.jpg');"></div>
+    <div class="header header-filter" style="background-image: url('/img/sopa.jpg');"></div>
     <div class="main main-raised">
         <div class="profile-content">
             <div class="container">

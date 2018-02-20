@@ -22,10 +22,10 @@ class CreateCartDetailsTable extends Migration
 
             //fk product
             $table->integer('product_id')->unsigned();
-            $table->foreign('product_id')->references('id')->on('products');
+            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
 
             $table->integer('quantity');
-            $table->integer('discount')->default(0); // % int 
+            $table->integer('discount')->default(0); // % int
             $table->timestamps();
         });
     }

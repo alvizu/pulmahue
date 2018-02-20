@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Listado de Productos')
+@section('title', 'Listado de Categorías')
 
 @section('body-class', 'product-page')
 

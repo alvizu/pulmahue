@@ -20,7 +20,7 @@
                         </div>
 
                         <div class="name">
-                            <h3 class="title">{{ $product->name }}n</h3>
+                            <h3 class="title">{{ $product->name }}</h3>
                             <h6>{{ $product->category->name }}</h6>
                         </div>
 

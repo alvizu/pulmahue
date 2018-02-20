@@ -972,7 +972,7 @@
 															<tr style="-webkit-font-smoothing:antialiased;" >
 																<td class="inner-padding oi-row-alt-back oi-row-borders oi-lastrow-borders" style="-webkit-font-smoothing:antialiased;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;border-left-width:1px;border-left-style:solid;border-left-color:#999999;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#999999;background-color:#ffffff;" >
 																	<p style="-webkit-font-smoothing:antialiased;font-family:sans-serif, 'Roboto';font-size:14px;Margin:0;line-height:24px;Margin-top:0px;color:#3C4858;" >
-																		{{ $detail->product->name }} nombre prueba
+																		{{ $detail->product->name }}
 																	</p>
 																</td>
 																<td class="inner-padding oi-row-alt-back oi-row-borders oi-lastrow-borders hide-for-mobile" style="-webkit-font-smoothing:antialiased;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;border-left-width:1px;border-left-style:solid;border-left-color:#999999;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#999999;background-color:#ffffff;" >
