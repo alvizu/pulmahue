@@ -1,17 +1,17 @@
 /*!
-
+    
  =========================================================
  * Material Kit - v1.1.1.0
  =========================================================
-
+ 
  * Product Page: http://www.creative-tim.com/product/material-kit
  * Copyright 2017 Creative Tim (http://www.creative-tim.com)
  * Licensed under MIT (https://github.com/timcreative/material-kit/blob/master/LICENSE.md)
-
+ 
  =========================================================
-
+ 
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
+ 
  */
 
 /* ANIMATION */
@@ -2772,7 +2772,7 @@ footer .copyright .material-icons {
   top: 3px;
 }
 
-footer a .container .copyright .pull-right {
+footer .copyright .pull-right {
   margin-top: 7px;
 }
 
@@ -4815,7 +4815,8 @@ h2.title {
 }
 
 .team .team-player img {
-  max-width: 170px;
+  width: 170px;
+  height: 160px;
 }
 
 .nav-align-center {
@@ -4900,8 +4901,9 @@ h2.title {
 }
 
 .profile-page .profile img {
-  max-width: 160px;
-  margin: -80px auto 0;
+  width: 200px;
+  height: 200px;
+  margin: -100px auto 0;
 }
 
 .profile-page .description {
@@ -4980,3 +4982,4 @@ h2.title {
     margin-right: 10px;
   }
 }
+

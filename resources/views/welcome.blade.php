@@ -113,7 +113,7 @@
                         <div class="row">
                             @foreach($categories as $category)
 
-                                <div class="col-md-4 col-sm-6">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
                                     <div class="team-player">
                                         <img src="{{ $category->featured_image_url }}" alt="Imagen representativa de la categoría {{ $category->name }}" class="img-raised img-circle">
                                         <h4 class="title">

@@ -66,7 +66,8 @@ h2.title{
             margin: $margin-base * 2 auto;
         }
         img{
-            max-width: 170px;
+            width: 170px;
+            height: 160px;
         }
     }
 }
@@ -154,8 +155,9 @@ h2.title{
         text-align: center;
 
         img{
-            max-width: 160px;
-            margin: -80px auto 0;
+            width: 200px;
+            height: 200px;
+            margin: -100px auto 0;
         }
     }
     .description{
