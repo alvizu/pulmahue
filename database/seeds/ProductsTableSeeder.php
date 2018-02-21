@@ -14,13 +14,13 @@ class ProductsTableSeeder extends Seeder
      */
     public function run()
     {
-        $categories = factory(Category::class, 4)->create();
+        $categories = factory(Category::class, 3)->create();
         $categories->each(function ($category) {
-          $products = factory(Product::class, 5)->make();
+          $products = factory(Product::class, 15)->make();
           $category->products()->saveMany($products);
 
           $products->each(function ($p) {
-            $images = factory(ProductImage::class, 6)->make();
+            $images = factory(ProductImage::class, 3)->make();
             $p->images()->saveMany($images);
           });
         });

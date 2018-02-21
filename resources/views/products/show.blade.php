@@ -65,7 +65,7 @@
                                         <div class="row">
                                           @foreach($images as $image)
                                             <div class="col-md-6">
-                                                <img src="{{ $image->image }}" class="img-rounded" />
+                                                <img src="{{ $image->url }}" class="img-rounded" />
 
                                             </div>
                                           @endforeach
