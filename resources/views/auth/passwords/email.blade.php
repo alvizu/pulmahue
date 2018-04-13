@@ -3,7 +3,7 @@
 @section('body-class', 'signup-page')
 
 @section('content')
-<div id="header" class="header header-filter" style="background: url('{{ asset("img/bg-fondo.jpg")}}');">
+<div id="header" class="header header-filter" style="background: url('{{ asset("img/bg-epa-3-2200x1231.jpg")}}');">
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">

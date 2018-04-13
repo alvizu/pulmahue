@@ -40,14 +40,17 @@
               <div class="section__video-container"><video class="section__video" muted="" autoplay="" loop="" preload="auto"> <source src="https://www.digitalhouse.com/wp-content/themes/dh/assets/videos/dh-home-header-video.mp4" type="video/mp4"></video></div>
           </section> -->
           <div class="wrapper">
-                  <div class="header header-filter" style="background-image: url('img/bg-fondo.jpg');">
+                  <div class="header header-filter" style="background-image: url('img/bg-epa-3-2200x1231.jpg');">
                     <div class="container">
-                          <div class="row">
-          					<div class="col-md-6">
-          						<h1 class="title">Haz de tu alimentación tu mejor aliada</h1>
+                          <div class="row" style="text-align: right;">
+                            <div class="col-md-6">
+
+                            </div>
+          					<div class=" col-md-6">
+          						<h1 class="title">EDGE PLATAFORMA AUDIOVISUAL</h1>
 
 
-                                <h4>Te ofrecemos planes ajustados a tus objetivos, cocinando sano y balanceado para ti. Preocupate solo por ordenar tus pedidos que nosotros nos encargamos de llenar tu refri. No empiences una dieta que terminará algún día, <strong>comienza un estilo de vida que dure para siempre!</strong></h4>
+                                <h4>EPA! es la solución novedosa y accesible de Edge Americas para la transmisión de contenidos en vivo y bajo demanda por Internet, <strong>contacte a nuestros especialistas y experimente EPA!</strong></h4>
           	                    <!-- <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-danger btn-raised btn-lg">
           							<i class="fa fa-play"></i> Watch video
           						</a> -->

@@ -8,7 +8,7 @@
 
 
     <div class="wrapper">
-        <div id="header" class="header header-filter" style="background: url('../../img/bg-fondo.jpg');">
+        <div id="header" class="header header-filter" style="background: url('../../img/bg-epa-3-2200x1231.jpg');">
 
         </div>
 
@@ -39,7 +39,7 @@
                                             <td>{{ $product->name }}</td>
                                             <td>{{ $product->description }}</td>
                                             <td>{{ $product->category->name }}</td>
-                                            <td class="text-right">₡ {{ $product->price }}</td>
+                                            <td class="text-right">$ {{ $product->price }}</td>
                                             <td class="td-actions text-right">
 
                                                 <form class="" action="{{ url('/admin/products/'.$product->id)}}" method="post">

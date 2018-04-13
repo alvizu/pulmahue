@@ -1063,7 +1063,7 @@
 																						<td class="final-total" style="-webkit-font-smoothing:antialiased;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;color:#ffffff;background-color:#9c27b0;" >
 																							<span style="-webkit-font-smoothing:antialiased;font-size:14px;" >Total</span>&nbsp;&nbsp;
 																							<span style="-webkit-font-smoothing:antialiased;font-size:26px;" >{{ $cart->total }}</span>&nbsp;&nbsp;
-																							<span style="-webkit-font-smoothing:antialiased;font-size:14px;" >CRC</span>
+																							<span style="-webkit-font-smoothing:antialiased;font-size:14px;" >ARS</span>
 																						</td>
 																					</tr>
 																				</table>
@@ -1132,16 +1132,16 @@
 										<table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0;font-family:sans-serif, 'Roboto';" >
 											<tr>
 												<td class="padding-20 contents center" style="width:100%;min-width:100%;text-align:center;padding-top:20px;padding-bottom:20px;padding-right:20px;padding-left:20px;" >
-													<p style="Margin:0;Margin-top:0px;font-size:13px;line-height:20px;Margin-bottom:16px;color:#ffffff;" ><a href="https://www.facebook.com/sucmeals/" style="color:#ffffff;text-decoration:underline;" >Facebook</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.instagram.com/sucmeals" style="color:#ffffff;text-decoration:underline;" >Instagram</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.twitter.com/sucmeals" style="color:#ffffff;text-decoration:underline;" >Twitter</a>
+													<p style="Margin:0;Margin-top:0px;font-size:13px;line-height:20px;Margin-bottom:16px;color:#ffffff;" ><a href="https://twitter.com/edgeamericas" style="color:#ffffff;text-decoration:underline;" >Facebook</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://twitter.com/edgeamericas" style="color:#ffffff;text-decoration:underline;" >Instagram</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://twitter.com/edgeamericas" style="color:#ffffff;text-decoration:underline;" >Twitter</a>
 													</p>
-													<p style="Margin:0;Margin-top:0px;font-size:13px;line-height:20px;Margin-bottom:16px;color:#ffffff;" >Gracias por hacer tu pedido en <a href="https://neo.loadsavedelete.com/" style="color:#ffffff;text-decoration:underline;" >Succulent Meals</a>
+													<p style="Margin:0;Margin-top:0px;font-size:13px;line-height:20px;Margin-bottom:16px;color:#ffffff;" >Gracias por hacer tu pedido en <a href="https://neo.loadsavedelete.com/" style="color:#ffffff;text-decoration:underline;" >{{ config('app.name') }}</a>
 													</p>
 													<table border="0" cellspacing="0" cellpadding="0" align="center" width="95%" style="border-spacing:0;font-family:sans-serif, 'Roboto';" >
 														<tr>
 															<td height="1" style="font-size:1px;color:#ffffff;mso-line-height-rule:exactly;line-height:1px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#ffffff;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >-</td>
 														</tr>
 													</table>
-													<p style="Margin:0;Margin-top:0px;font-size:13px;line-height:20px;Margin-bottom:16px;color:#ffffff;" >San José, Costa Rica</p>
+													<p style="Margin:0;Margin-top:0px;font-size:13px;line-height:20px;Margin-bottom:16px;color:#ffffff;" >Buenos Aires, Argentina</p>
 												</td>
 											</tr>
 										</table>

@@ -9,7 +9,7 @@
 @section('content')
 
 <div class="wrapper">
-    <div class="header header-filter" style="background-image: url('/img/sopa.jpg');"></div>
+    <div class="header header-filter" style="background-image: url('/img/bg-media-free.jpg');"></div>
     <div class="main main-raised">
         <div class="profile-content">
             <div class="container">
@@ -36,7 +36,7 @@
                     <p>{{ $product->long_description }}</p>
                 </div>
                 <div class="description text-center">
-                    <p>₡ {{ $product->price }}</p>
+                    <p>$ {{ $product->price }}</p>
                 </div>
 
                   <!-- Button trigger modal -->

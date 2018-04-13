@@ -8,7 +8,7 @@
 
 
     <div class="wrapper">
-        <div class="header header-filter" style="background: url('img/cuchillo2.jpg');">
+        <div class="header header-filter" style="background: url('img/bg-media-free.jpg');">
         </div>
 
         <div class="main main-raised">
@@ -60,9 +60,9 @@
                                     <td>
                                         <a href="{{ url('/products/'.$detail->product->id) }}" target="_blank">{{ $detail->product->name }}</a>
                                     </td>
-                                    <td>₡ {{ $detail->product->price }}</td>
+                                    <td>$ {{ $detail->product->price }}</td>
                                     <td>{{ $detail->quantity }}</td>
-                                    <td>₡ {{ $detail->quantity * $detail->product->price }}</td>
+                                    <td>$ {{ $detail->quantity * $detail->product->price }}</td>
                                     <td class="td-actions text-right">
 
                                         <form class="" action="{{ url('/cart') }}" target="_blank" method="post">
@@ -85,7 +85,7 @@
                         </tbody>
                     </table>
 
-                    <p><strong>Total a pagar: </strong>₡ {{ auth()->user()->cart->total }}</p>
+                    <p><strong>Total a pagar: </strong>$ {{ auth()->user()->cart->total }}</p>
 
                     <div class="text-center">
                       <form class="" action="{{ url('/order') }}" method="post">

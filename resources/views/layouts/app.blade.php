@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <link rel="apple-touch-icon" sizes="76x76" href="{{ asset("img/sm_logo2.png")}}">
-    <link rel="icon" type="image/png" href="{{ asset("img/sm_logo2.png")}}">
+    <link rel="icon" type="image/png" href="{{ asset("img/favicon2.png")}}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <title>@yield('title', config('app.name'))</title>
@@ -34,7 +34,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ url('/') }}"><img src='{{ asset("img/succulentmeals_logo_min.png")}}' alt="{{ config('app.name') }}" width="188"></a>
+                <a class="navbar-brand" href="{{ url('/') }}"><img src='{{ asset("img/logo-light.png")}}' alt="{{ config('app.name') }}" width="100"></a>
             </div>
 
             <div class="collapse navbar-collapse" id="navigation-example">
